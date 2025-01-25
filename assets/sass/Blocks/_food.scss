@@ -1,3 +1,15 @@
+.h{
+    width: 100%;
+    max-width: $brp-10;
+    padding: $spc-20 $spc-40;
+    margin: 0 auto;
+    border-bottom: 0.25px solid black;
+    margin-bottom:-40px;
+@media (min-width:$brp-15){
+    max-width: 1500px;
+    width: 98%;
+}
+}
 .food {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -9,6 +21,8 @@
     padding: $spc-20 $spc-40;
 
     .card {
+        border-bottom: 0.25px solid black;
+        padding-bottom: $spc-40;
         &__food__price{
             @include flex(space-between, center, row, nowrap, $spc-40);
 
@@ -16,7 +30,8 @@
         &__food {
             padding: $spc-40 0 $spc-20 $spc-20;
 
-            @include flex(center, center, row, nowrap, $spc-40);
+
+            @include flex(flex-start, center, row, nowrap, $spc-40);
 
             &__image {
                 @include flex(space-between, center, column, nowrap, $spc-20);

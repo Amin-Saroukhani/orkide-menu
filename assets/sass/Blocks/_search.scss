@@ -1,0 +1,40 @@
+.search {
+    width: 100%;
+    max-width: $brp-10;
+    margin-top: $spc-20;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    &__input{
+    width: 100%;
+    padding: 0.75rem 2.5rem 0.75rem 0.5rem;
+    box-shadow: 0 $spc-10 $spc-50 #00000014;
+    border-radius: $spc-20;
+    font-size: $spc-40;
+    border: none;
+    direction: rtl;
+    }
+    &__image{
+    position: absolute;
+    top: 50%;
+    right: $spc-30;
+    transform: translateY(-50%);
+    width: $spc-50;
+    height: $spc-50;
+    }
+    &__button{
+    color: $color-secondery-500;
+    position: absolute;
+    top: 50%;
+    left: $spc-10;
+    transform: translateY(-50%);
+    background-color:$color-button;
+    border-radius: $spc-20;
+    padding: $spc-20 $spc-60;
+    border: none;
+    }
+    @media (min-width:$brp-15){
+        max-width: 1500px;
+        width: 97%;
+    }
+}

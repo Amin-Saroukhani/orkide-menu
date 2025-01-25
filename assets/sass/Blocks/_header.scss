@@ -1,0 +1,17 @@
+.header{
+    @include flex();
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: $brp-15;
+    padding: $spc-40 $spc-10;
+    box-shadow: 0 4px 20px #00000014;
+    border-radius:  0rem 0  $spc-40 $spc-40;
+    &__logo{
+        margin: 0 auto;
+    }
+    @media (min-width:$brp-15){
+        max-width:1500px;
+        width: 100%;
+    }
+}

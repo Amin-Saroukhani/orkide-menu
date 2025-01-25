@@ -1,0 +1,56 @@
+.food {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    max-width: $brp-10;
+    margin: 0 auto;
+    box-shadow: 0 $spc-10 $spc-50 #00000014;
+    border-radius: $spc-10;
+    padding: $spc-20 $spc-40;
+
+    .card {
+        &__food__price{
+            @include flex(space-between, center, row, nowrap, $spc-40);
+
+        }
+        &__food {
+            padding: $spc-40 0 $spc-20 $spc-20;
+
+            @include flex(center, center, row, nowrap, $spc-40);
+
+            &__image {
+                @include flex(space-between, center, column, nowrap, $spc-20);
+            }
+            &__des{
+                @include flex(center , flex-start , column , nowrap , $spc-30);
+            }
+        }
+        &__food__button{
+            padding: $spc-30 $spc-80;
+            background-color: $color-secondery-500;
+            color: $color-button;
+            border:0.5px solid $color-button;
+            border-radius: $spc-20;
+        }
+        @media (min-width:1026px){
+            max-width: 630px;
+            width:100% ;
+        }
+        @media (max-width: 1026px){
+            max-width: 1000px;
+            width: 100%;
+        }
+
+    }
+    @media (min-width:1026px){
+        max-width: 1500px;
+        width: 98%;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    @media (max-width:1026px){
+        max-width: 1500px;
+        width: 100%;
+    }
+
+}

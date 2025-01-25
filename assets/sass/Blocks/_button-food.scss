@@ -1,0 +1,25 @@
+.button__food{
+    margin: $spc-40 auto;
+    width: 100%;
+    max-width: $brp-10;
+    display: flex;
+    gap: 0.5rem;
+    &__1{
+    color: $color-secondery-500;
+    padding: $spc-20 $spc-40;
+    background-color: $color-button;
+    border: none;
+    border-radius: $spc-10;
+    }
+    &__2{
+    color: black;
+    padding: $spc-20 $spc-40;
+    background-color:$color-secondery-500;
+    border: 0.5px solid black;
+    border-radius: $spc-10;
+    }
+    @media (min-width:$brp-15){
+        max-width: 1500px;
+        width: 97%;
+    }
+}

@@ -1,0 +1,27 @@
+.select__food{
+    display: flex;
+    gap: $spc-40;
+    width: 100%;
+    max-width: $brp-10;
+    margin: $spc-20 auto;
+    box-shadow: 0 $spc-10 $spc-50 #00000014;
+    border-radius: $spc-20;
+    padding-top: $spc-40;
+    padding-right: $spc-40;
+    padding-bottom: $spc-20;
+    &__list{
+    @include flex(center , center , column , nowrap , $spc-20)
+    }
+    &__image{
+        opacity: 0.5;
+    }
+    &__image:hover{
+        opacity: 1;
+        width: 50px;
+
+    }
+    @media (min-width:$brp-15){
+        max-width: 1500px;
+        width: 97%;
+    }
+}

@@ -1,0 +1,14 @@
+//shared
+@import 'shared/variables';
+@import 'shared/normalize';
+@import 'shared/mixins';
+
+
+//blocks
+@import './Blocks/header';
+@import 'Blocks/search';
+@import 'Blocks/select-food';
+@import 'Blocks/button-food';
+@import 'Blocks/food';
+
+ 

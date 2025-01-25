@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 500px;
+  padding: 16px 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 0rem 0 16px 16px;
+}
+.header__logo {
+  margin: 0 auto;
+}
+@media (min-width: 500px) {
+  .header {
+    max-width: 1500px;
+    width: 100%;
+  }
+}
+
+.search {
+  width: 100%;
+  max-width: 480px;
+  margin-top: 8px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+.search__input {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 0.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 8px;
+  font-size: 16px;
+  border: none;
+  direction: rtl;
+}
+.search__image {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+.search__button {
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  background-color: #134390;
+  border-radius: 8px;
+  padding: 8px 24px;
+  border: none;
+}
+@media (min-width: 500px) {
+  .search {
+    max-width: 1500px;
+    width: 97%;
+  }
+}
+
+.select__food {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  max-width: 480px;
+  margin: 8px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 8px;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+}
+.select__food__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+.select__food__image {
+  opacity: 0.5;
+}
+.select__food__image:hover {
+  opacity: 1;
+  width: 50px;
+}
+@media (min-width: 500px) {
+  .select__food {
+    max-width: 1500px;
+    width: 97%;
+  }
+}
+
+.button__food {
+  margin: 16px auto;
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  gap: 0.5rem;
+}
+.button__food__1 {
+  color: #ffffff;
+  padding: 8px 16px;
+  background-color: #134390;
+  border: none;
+  border-radius: 4px;
+}
+.button__food__2 {
+  color: black;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border: 0.5px solid black;
+  border-radius: 4px;
+}
+@media (min-width: 500px) {
+  .button__food {
+    max-width: 1500px;
+    width: 97%;
+  }
+}
+
+.food {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+.food .card__food__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 16px;
+}
+.food .card__food {
+  padding: 16px 0 8px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 16px;
+}
+.food .card__food__image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+.food .card__food__des {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+.food .card__food__button {
+  padding: 12px 32px;
+  background-color: #ffffff;
+  color: #134390;
+  border: 0.5px solid #134390;
+  border-radius: 8px;
+}
+@media (min-width: 1026px) {
+  .food .card {
+    max-width: 630px;
+    width: 100%;
+  }
+}
+@media (max-width: 1026px) {
+  .food .card {
+    max-width: 1000px;
+    width: 100%;
+  }
+}
+@media (min-width: 1026px) {
+  .food {
+    max-width: 1500px;
+    width: 98%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1026px) {
+  .food {
+    max-width: 1500px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

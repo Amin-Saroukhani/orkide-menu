@@ -218,6 +218,7 @@ a {
   .food .card {
     max-width: 630px;
     width: 100%;
+    padding-right: 24px;
   }
 }
 @media (max-width: 1026px) {
